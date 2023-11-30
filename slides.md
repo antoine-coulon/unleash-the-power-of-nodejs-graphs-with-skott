@@ -351,25 +351,12 @@ const {
 
 ---
 
-# Questions ?
+# Thanks for listening! 
 
-<div class="grid grid-cols-2 gap-x-4 pt-5">
+- Repo link: <b color="cyan">https://github.com/antoine-coulon/skott</b>
 
-<div>
-<img width="200" src="https://private-user-images.githubusercontent.com/43391199/270479836-4f1dfaa7-af3b-43cb-9f5c-a2ca0f960265.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDEzMzI3ODUsIm5iZiI6MTcwMTMzMjQ4NSwicGF0aCI6Ii80MzM5MTE5OS8yNzA0Nzk4MzYtNGYxZGZhYTctYWYzYi00M2NiLTlmNWMtYTJjYTBmOTYwMjY1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzExMzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMTMwVDA4MjEyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM2Zjk0YWIwOGNmM2EwYTM0Zjk5NGIwOWY4MmRkNzU5MWJlZWJjM2JmNzBhYWU3ZTQ3OTdiNDIzOTEwZjQyM2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.pfZ8SOEbayqjCGeX0hHIFxo55IDseIjBFcQTbSNWQ9k">
-</div>
+- **digraph-js** library:  <b color="cyan">https://github.com/antoine-coulon/digraph-js</b>
 
-<div>
+- dev.to series around JS graphs: <b color="cyan"> https://dev.to/antoinecoulon/master-directed-graphs-by-example-with-javascript-4oef </b>
 
-Thanks for listening! 
-
-Repo link: <b color="cyan">https://github.com/antoine-coulon/skott</b>
-
-digraph-js library:  <b color="cyan">https://github.com/antoine-coulon/digraph-js</b>
-
-Small dev.to series around JS graphs: <b color="cyan"> https://dev.to/antoinecoulon/master-directed-graphs-by-example-with-javascript-4oef
-</b>
-</div>
-
-</div>
----
+**Questions?**
