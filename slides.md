@@ -43,14 +43,14 @@ css: unocss
   </div>
 
   <div>
-    <div class="mb-4"><ri-github-line color="blue"/> <b color="opacity-30">antoine-coulon</b></div>
-    <div class="mb-4"><ri-twitter-line color="blue"/> <b color="opacity-30">c9antoine</b></div>
-    <div class="mb-4"><ri-user-3-line color="blue"/> <b color="opacity-30">dev.to/antoinecoulon</b></div>
+    <div class="mb-4 flex"><ri-github-line color="blue" class="mt-1" /> <b color="opacity-30" class="ml-2 mb-2">antoine-coulon</b></div>
+    <div class="mb-4 flex"><ri-twitter-line color="blue" class="mt-1"/> <b color="opacity-30" class="ml-2 mb-2">c9antoine</b></div>
+    <div class="mb-4 flex"><ri-user-3-line color="blue" class="mt-1"/> <b color="opacity-30" class="ml-2 mb-2">dev.to/antoinecoulon</b></div>
   </div>
 </div>
 
 <div class="pl-20">
-  <img src="https://avatars.githubusercontent.com/u/43391199?s=400&u=b394996dd7ddc0bf7a317185ee9c378d5b609e12&v=4" class="rounded-full w-40" />
+  <img src="https://avatars.githubusercontent.com/u/43391199?s=400&u=b394996dd7ddc0bf7a317185ee9c378d5b609e12&v=4" class="rounded-full w-60" />
 </div>
 
 </div>
