@@ -27,33 +27,39 @@ css: unocss
 ### Antoine Coulon @ Accelerator #1 - 12/06/2023
 
 ---
-layout: center
----
 
-# Antoine Coulon
+<div class="grid grid-cols-2 gap-x-4 pt-5 pr-10 pl-10">
 
-<div class="grid grid-cols-[3fr,2fr]">
-  <div class="text-center pb-4">
-    <div class="leading-8 opacity-80">
-      Software Engineer @ evryg
+<div class="grid grid-cols-[3fr,2fr] mr-10">
+  <div class="pb-4">
+    <h1>Antoine Coulon</h1>
+    <div class="leading-8">
+      Lead Software Engineer @ evryg
       <br>
-      Open Source Maintainer 
+      Open Source: NodeSecure, skott, Effect, Rush.js
     </div>
   </div>
   <div class="border-l border-gray-400 border-opacity-25 !all:leading-12 !all:list-none my-auto">
   </div>
 
-  <div class="text-center">
-    <div class="p-2">
-    GitHub: antoine-coulon <br>
-    </div>
-    Twitter: c9antoine
+  <div>
+    <div class="mb-4"><ri-github-line color="blue"/> <b color="opacity-30">antoine-coulon</b></div>
+    <div class="mb-4"><ri-twitter-line color="blue"/> <b color="opacity-30">c9antoine</b></div>
+    <div class="mb-4"><ri-user-3-line color="blue"/> <b color="opacity-30">dev.to/antoinecoulon</b></div>
   </div>
 </div>
+
+<div class="pl-20">
+  <img src="https://avatars.githubusercontent.com/u/43391199?s=400&u=b394996dd7ddc0bf7a317185ee9c378d5b609e12&v=4" class="rounded-full w-40" />
+</div>
+
+</div>
+
 
 <style>
 h1 {
   color: #008ad6;
+  font-weight: bold;
 }
 </style>
 
@@ -209,6 +215,7 @@ Who else relies on graphs?
 
 Graph is the skeleton of the project
 
+- Exposing general purpose information, metadata, dependencies
 - Revealing implicit/hidden dependencies, hard to track by just reading code 
 - Revealing circular dependencies that can be harmful at run-time or that could highlight design smells
 - Having a clear vision of project design, that can be highlighted using visual patterns (hierarchical/clustering)
@@ -259,7 +266,7 @@ Most of the time it is difficult to do so
 
 - Internally abstracted: Often embedded and abstracted within the core, limiting accessibility
 - API limitations: lack of consumable APIs and primitives to traverse, introspect, get sub-graphs
-- Visualization Gap: Absence of built-in visualization capabilities poses a hurdle for seamless user/developer experiences.
+- Visualization gap: Absence of built-in visualization capabilities poses a hurdle for seamless user/developer experiences.
 
 How to unleash the full power of graphs?
 
@@ -333,9 +340,15 @@ const {
 </div>
 
 ---
+layout: center
+text-align: center
+---
 
 # Nevermind let's do a quick demo
 
+<div class="text-center pt-5">
+  <img class="ml-5" src="https://media.giphy.com/media/UrEQirmnMPxBwToULv/giphy.gif">
+</div>
 ---
 
 # More to come 
