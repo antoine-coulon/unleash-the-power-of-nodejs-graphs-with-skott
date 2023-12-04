@@ -169,7 +169,7 @@ OS level:
 Both Node.js and the ecosystem heavily rely on graphs
 
 - Runtime internals: program parsing (ASTs) and evaluation, garbage collection, etc
-- Dependencies management: package managers maintain a dependency graph
+- Dependencies management: package managers maintain a dependency graph through lockfiles applied on the filesystem
 - Module systems: resolving the full dependency graph through module resolution
 
 <div class="grid grid-cols-2 gap-x-4 pt-5">
@@ -223,7 +223,7 @@ Graph is the skeleton of the project
 
 ---
 
-# A small example of harmful hidden dependencies
+# 1/2 example of harmful hidden dependencies
 
 In the context of a monorepo, "lib-1" depends on "lib-3" by mistake hence pulling a whole sub-graph for nothing
 
@@ -255,6 +255,81 @@ but that's hard because:
 - dependencies could be created through config files, manifest files (package.json) or source code (static analysis)
 - hard to track at a certain scale given a certain pace of change
 - depends on the way of how dependencies are created
+
+-->
+
+---
+
+
+# 2/2 example of harmful circular dependencies
+
+
+<div class="text-center">
+
+```mermaid
+graph LR;
+A[module-a]-->|depends_on|B[module-b]
+
+B-->|depends_on|C[module-c]
+C-->|depends_on|A
+```
+
+</div>
+
+
+<div class="grid grid-cols-3 gap-x-4 pt-5">
+
+```js
+// a.js
+const b = require('./b');
+
+console.log({b})
+
+module.exports = {
+    a: 1
+}
+```
+
+```js
+// b.js
+const c = require('./c');
+
+console.log({c})
+
+module.exports = {
+    b: 1
+}
+```
+
+```js
+// c.js
+const a = require('./a');
+
+console.log({a})
+
+module.exports = {
+    c: 1
+}
+```
+
+<div v-click>
+
+</div>
+
+</div>
+
+
+```bash
+❯ node a.js
+{ a: {} }
+{ c: { c: 1 } }
+{ b: { b: 1 } }
+(node:51863) Warning: Accessing non-existent property 'Symbol(nodejs.util.inspect.custom)' of module exports inside circular dependency
+```
+
+<!-- 
+
+TODO
 
 -->
 
@@ -304,8 +379,8 @@ skott
       --displayMode="webapp"
       --fileExtensions=".ts" 
       --ignorePattern="__tests__/**/*"
+      --cwd="some-application"
 ```
-
 
 </div>
 
