@@ -26,6 +26,17 @@ css: unocss
 
 ### Antoine Coulon @ Accelerator #1 - 12/06/2023
 
+<!-- 
+
+So tonight I'll talk about graphs and how we can use them in the context of Node.js
+and I'll also present you a tool I created that helps working with them.
+
+But before talking about tools I general I always prefer to talk about the problems
+first.
+
+
+-->
+
 ---
 
 <div class="grid grid-cols-2 gap-x-4 pt-5 pr-10 pl-10">
@@ -62,6 +73,17 @@ h1 {
   font-weight: bold;
 }
 </style>
+
+<!-- 
+
+Currently working as a lead software engineer and I'm really convinced that a great developer tools and experience help achieve great softwares.
+
+Besides that on my free-time I'm actively contributing to open-source, including NodeSecure (core team), skott (creator), Effect (ecosystem/advocate), Rushstack (ecosystem).
+
+You can find me on twitter/github and also find some of my blogposts on dev.to, until I get my own website.
+
+
+-->
 
 
 ---
@@ -198,6 +220,13 @@ A[index.js] -->|depends_on| C[node_modules/fastify/fastify.js]
 </div>
 </div>
 
+<!-- 
+
+Example: as simple as this example can seem, believe or not this is already a graph with three nodes.
+
+To evaluate the whole program, all these three dependencies must be resolved first.
+-->
+
 --- 
 
 # Node.js ecosystem
@@ -220,6 +249,13 @@ Graph is the skeleton of the project
 - Revealing circular dependencies that can be harmful at run-time or that could highlight design smells
 - Having a clear vision of project design, that can be highlighted using visual patterns (hierarchical/clustering)
 - Highlighting dead code, unused dependencies, everything that could be/not be potentially pruned/tree-shaken
+
+
+<!--
+
+Mastering its graph is important because it allows you to understand what runs under the hood and 
+
+-->
 
 ---
 
@@ -312,12 +348,10 @@ module.exports = {
 }
 ```
 
+
+</div>
+
 <div v-click>
-
-</div>
-
-</div>
-
 
 ```bash
 ❯ node a.js
@@ -327,9 +361,13 @@ module.exports = {
 (node:51863) Warning: Accessing non-existent property 'Symbol(nodejs.util.inspect.custom)' of module exports inside circular dependency
 ```
 
+</div>
+
+
+
 <!-- 
 
-TODO
+Let's talk a little bit about circular dependencies. Circular dependencies can be harmful at runtime, I'm sure many of you were caught at some point in time by that.
 
 -->
 
